@@ -1,6 +1,6 @@
 ARG GOVERSION=1.19
 ARG GOARCH=amd64
-FROM docker.mirrors.ustc.edu.cn/golang:${GOVERSION} as builder
+FROM hzaycmuk.mirror.aliyuncs.com/golang:${GOVERSION} as builder
 ARG GOARCH
 ENV GOARCH=${GOARCH}
 WORKDIR /go/src/k8s.io/kube-state-metrics/
